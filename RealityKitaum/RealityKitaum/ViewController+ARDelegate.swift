@@ -46,16 +46,17 @@ extension ViewController: ARSessionDelegate {
 //            }
 //            print("Enconstei na entityA \(entityA.name)")
             
-            self.tireCollideWithSpot(entiyA: event.entityA, entityB: event.entityB)
-            self.tireCollideWithSpot(entiyA: event.entityB, entityB: event.entityA)
+            self.tireCollideWithSpot(entityA: event.entityA, entityB: event.entityB)
+            self.tireCollideWithSpot(entityA: event.entityB, entityB: event.entityA)
             
         }))
     }
     
-    func tireCollideWithSpot(entiyA: Entity, entityB: Entity) {
-        if entiyA as? TireSpotEntity != nil &&
+    func tireCollideWithSpot(entityA: Entity, entityB: Entity) {
+        if entityA as? TireSpotEntity != nil &&
             entityB.name == "tire"{
             print("PNEU COM SPOT OKAY")
+            self.pneuSpotEntity = entityA
         }
     }
 }

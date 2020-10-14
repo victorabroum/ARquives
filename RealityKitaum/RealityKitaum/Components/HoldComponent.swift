@@ -28,8 +28,14 @@ class HoldComponent: Component {
         entity.move(to: newTransform, relativeTo: entity.parent)
     }
     
-    public func release() {
+    public func release(onParent parent: Entity?) {
         print("Soltou do gado!")
-        entity.components[PhysicsBodyComponent.self]?.mode = .dynamic
+        if let newParent = parent {
+            entity.setParent(newParent)
+            entity.transform.translation = .zero
+            // TODO set position to .zero
+        } else {
+            entity.components[PhysicsBodyComponent.self]?.mode = .dynamic
+        }
     }
 }

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     public var holdObject: Entity?
     public var cameraEntity: Entity?
+    public var pneuSpotEntity: Entity?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +57,6 @@ class ViewController: UIViewController {
                 let tireSpot = TireSpotEntity(color: .red, model: entity.children[0] as! HasModel)
                 entity.addChild(tireSpot)
 //                tireSpot.addCollisions()
-                
-                
             }
         }
     }
@@ -72,7 +71,7 @@ class ViewController: UIViewController {
                 holdObject = entity
             }
         } else {
-            holdObject?.components[HoldComponent.self]?.release()
+            holdObject?.components[HoldComponent.self]?.release(onParent: pneuSpotEntity)
             holdObject = nil
         }
         
