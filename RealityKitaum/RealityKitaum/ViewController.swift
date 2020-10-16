@@ -56,7 +56,6 @@ class ViewController: UIViewController {
             } else if entity.name == "tireSpot" {
                 let tireSpot = TireSpotEntity(color: .red, model: entity.children[0] as! HasModel)
                 entity.addChild(tireSpot)
-//                tireSpot.addCollisions()
             }
         }
     }
