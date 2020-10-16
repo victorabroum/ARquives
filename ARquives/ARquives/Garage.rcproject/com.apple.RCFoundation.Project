@@ -35,7 +35,7 @@
                           "height",
                           {
                             "typeName" : "Double",
-                            "value" : 0.01
+                            "value" : 0.02
                           }
                         ],
                         [
@@ -70,6 +70,13 @@
                           {
                             "typeName" : "UUID",
                             "value" : "197781DA-628A-4533-9BA2-D856A6241DB1"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
                           }
                         ]
                       ]
@@ -413,14 +420,14 @@
                           "rigidBody-motionType",
                           {
                             "typeName" : "REMotionType",
-                            "value" : "static"
+                            "value" : "dynamic"
                           }
                         ],
                         [
                           "rigidBody-shapeType",
                           {
                             "typeName" : "String",
-                            "value" : "sphere"
+                            "value" : "default"
                           }
                         ]
                       ]
@@ -439,9 +446,9 @@
                         0,
                         0.099999994039535522,
                         0,
-                        -3.7252902984619141e-09,
-                        0.092084228992462158,
-                        0.10381155461072922,
+                        -3.7252907425511239e-09,
+                        0.16191767156124115,
+                        0.19747006893157959,
                         1
                       ]
                     }
@@ -452,6 +459,357 @@
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
                   "2940847E-206C-4007-93EC-38CBF238B9C1" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
+                  "DA2EEB5F-4712-41A4-8107-7DC63FCD7542" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:39d019f05690596abb94722dd6019dc3\/aroCapitalWithPneu.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ]
+                            ],
+                            "children" : {
+                              "aroCapitalWithPneu" : {
+                                "overrides" : {
+                                  "arguments" : [
+                                    [
+                                      "includeSceneScaling",
+                                      {
+                                        "typeName" : "Bool",
+                                        "value" : false
+                                      }
+                                    ],
+                                    [
+                                      "subpath",
+                                      {
+                                        "typeName" : "String",
+                                        "value" : "aroCapitalWithPneu"
+                                      }
+                                    ],
+                                    [
+                                      "url",
+                                      {
+                                        "typeName" : "String",
+                                        "value" : "model:39d019f05690596abb94722dd6019dc3\/aroCapitalWithPneu.usdz"
+                                      }
+                                    ],
+                                    [
+                                      "withDescendants",
+                                      {
+                                        "typeName" : "Bool",
+                                        "value" : false
+                                      }
+                                    ]
+                                  ],
+                                  "children" : {
+                                    "aroCapital" : {
+                                      "overrides" : {
+                                        "arguments" : [
+                                          [
+                                            "includeSceneScaling",
+                                            {
+                                              "typeName" : "Bool",
+                                              "value" : false
+                                            }
+                                          ],
+                                          [
+                                            "subpath",
+                                            {
+                                              "typeName" : "String",
+                                              "value" : "aroCapitalWithPneu\/aroCapital"
+                                            }
+                                          ],
+                                          [
+                                            "url",
+                                            {
+                                              "typeName" : "String",
+                                              "value" : "model:39d019f05690596abb94722dd6019dc3\/aroCapitalWithPneu.usdz"
+                                            }
+                                          ],
+                                          [
+                                            "withDescendants",
+                                            {
+                                              "typeName" : "Bool",
+                                              "value" : true
+                                            }
+                                          ]
+                                        ],
+                                        "factory" : {
+                                          "identifier" : "com.apple.af.FileImportAssetFactory",
+                                          "version" : "0.0"
+                                        },
+                                        "runtimeAttributes" : [
+                                          [
+                                            "RuntimeIdentifier",
+                                            {
+                                              "typeName" : "UUID",
+                                              "value" : "FBF147A6-443E-48EA-AB84-6B4BBC606918"
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "transform" : {
+                                        "matrix" : [
+                                          1,
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          1,
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          1,
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          1
+                                        ]
+                                      }
+                                    },
+                                    "aroCapital_pneuCapital" : {
+                                      "overrides" : {
+                                        "arguments" : [
+                                          [
+                                            "includeSceneScaling",
+                                            {
+                                              "typeName" : "Bool",
+                                              "value" : false
+                                            }
+                                          ],
+                                          [
+                                            "subpath",
+                                            {
+                                              "typeName" : "String",
+                                              "value" : "aroCapitalWithPneu\/aroCapital_pneuCapital"
+                                            }
+                                          ],
+                                          [
+                                            "url",
+                                            {
+                                              "typeName" : "String",
+                                              "value" : "model:39d019f05690596abb94722dd6019dc3\/aroCapitalWithPneu.usdz"
+                                            }
+                                          ],
+                                          [
+                                            "withDescendants",
+                                            {
+                                              "typeName" : "Bool",
+                                              "value" : true
+                                            }
+                                          ]
+                                        ],
+                                        "factory" : {
+                                          "identifier" : "com.apple.af.FileImportAssetFactory",
+                                          "version" : "0.0"
+                                        },
+                                        "runtimeAttributes" : [
+                                          [
+                                            "RuntimeIdentifier",
+                                            {
+                                              "typeName" : "UUID",
+                                              "value" : "7B9CDB19-CA74-445C-9540-A7A82AF8CAAC"
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "transform" : {
+                                        "matrix" : [
+                                          1,
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          1,
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          1,
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          1
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "factory" : {
+                                    "identifier" : "com.apple.af.FileImportAssetFactory",
+                                    "version" : "0.0"
+                                  },
+                                  "runtimeAttributes" : [
+                                    [
+                                      "RuntimeIdentifier",
+                                      {
+                                        "typeName" : "UUID",
+                                        "value" : "3FE9EE48-ECD6-4988-9BAE-28F14E9A58FE"
+                                      }
+                                    ]
+                                  ]
+                                },
+                                "transform" : {
+                                  "matrix" : [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    5.2154075092403218e-05,
+                                    -9.5939874649047852,
+                                    0,
+                                    1
+                                  ]
+                                }
+                              }
+                            },
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "A47863A8-3183-4ACF-AD6C-1B998B1CB0E7"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "8131669E-B170-462D-98F0-7D001B44D9EF"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Wheel"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "rubber",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "dynamic"
+                          }
+                        ],
+                        [
+                          "rigidBody-shapeType",
+                          {
+                            "typeName" : "String",
+                            "value" : "default"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.099999994039535522,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.099999994039535522,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.099999994039535522,
+                        0,
+                        0.0308943260461092,
+                        0.1619172990322113,
+                        -0.063350684940814972,
+                        1
+                      ]
+                    }
+                  },
                   "FE1C08F0-6AA4-4DDD-9E07-91463CC0B297" : null
                 },
                 "factory" : null,
@@ -469,21 +827,21 @@
               "title" : "GarageScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.47612515091896057,
-                  2.9802322387695312e-08,
-                  -0.87937748432159424,
+                  0.72363519668579102,
+                  2.9802317058624794e-08,
+                  -0.69018256664276123,
                   0,
-                  -0.18975965678691864,
-                  0.97644013166427612,
-                  -0.1027422770857811,
+                  -0.088660247623920441,
+                  0.99171477556228638,
+                  -0.092957399785518646,
                   0,
-                  0.85865938663482666,
-                  0.21578851342201233,
-                  0.46490761637687683,
+                  0.6844642162322998,
+                  0.12845900654792786,
+                  0.71763980388641357,
                   0,
-                  0.77158987522125244,
-                  0.27942362427711487,
-                  0.35074135661125183,
+                  0.64099794626235962,
+                  0.20343974232673645,
+                  0.5866701602935791,
                   1
                 ],
                 "sceneTransform" : [

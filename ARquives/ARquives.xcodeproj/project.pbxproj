@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7625863F2539EF4800197B60 /* HandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625863E2539EF4800197B60 /* HandsController.swift */; };
+		762586492539F14900197B60 /* HoldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762586482539F14900197B60 /* HoldComponent.swift */; };
 		764150222539DD83002B131F /* GesturesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764150212539DD83002B131F /* GesturesComponent.swift */; };
 		76980E162539D07D00550395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76980E152539D07D00550395 /* AppDelegate.swift */; };
 		76980E182539D07D00550395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76980E172539D07D00550395 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7625863E2539EF4800197B60 /* HandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsController.swift; sourceTree = "<group>"; };
+		762586482539F14900197B60 /* HoldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldComponent.swift; sourceTree = "<group>"; };
 		764150212539DD83002B131F /* GesturesComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesComponent.swift; sourceTree = "<group>"; };
 		76980E122539D07D00550395 /* ARquives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARquives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76980E152539D07D00550395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				76980E172539D07D00550395 /* ViewController.swift */,
+				7625863E2539EF4800197B60 /* HandsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -51,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				764150212539DD83002B131F /* GesturesComponent.swift */,
+				762586482539F14900197B60 /* HoldComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 			files = (
 				764150222539DD83002B131F /* GesturesComponent.swift in Sources */,
 				76980E182539D07D00550395 /* ViewController.swift in Sources */,
+				7625863F2539EF4800197B60 /* HandsController.swift in Sources */,
 				76980E2D2539D16800550395 /* Garage.rcproject in Sources */,
+				762586492539F14900197B60 /* HoldComponent.swift in Sources */,
 				76980E162539D07D00550395 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

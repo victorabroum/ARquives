@@ -17,11 +17,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        overlayCoachingView()
+        setupOverlayCoachingView()
         setupScene()
     }
     
     private func setupScene() {
+        
+//        arView.debugOptions = [.showPhysics]
+        
         garageAnchor = try! Garage.loadGarageScene()
         arView.scene.anchors.append(garageAnchor!)
         
@@ -33,33 +36,45 @@ class ViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onTap(_:)))
         arView.addGestureRecognizer(tapGestureRecognizer)
         
-        setCommonGestures()
+//        setCommonGestures()
+        
+        // Set custom gestures
+        HandsController.shared.setHands(cameraAnchor!)
+        
+        prepareEntities(garageAnchor!.children)
     }
     
     private func setCommonGestures() {
-        if let wheel = garageAnchor?.wheel {
+        if let wheel = garageAnchor?.findEntity(named: "Wheel") {
             GesturesComponent.registerComponent()
             wheel.components[GesturesComponent.self] = GesturesComponent(arView: arView, gestures: [.rotation, .scale, .translation], for: wheel)
         }
     }
     
-    @objc func onTap(_ sender: UITapGestureRecognizer) {
-        
-//        let location = sender.location(in: arView)
-//
-//        if holdObject == nil {
-//            if let entity = arView.entity(at: location) {
-//                entity.components[HoldComponent.self]?.hold(onAnchor: cameraEntity!)
-//                holdObject = entity
-//            }
-//        } else {
-//            holdObject?.components[HoldComponent.self]?.release(onParent: pneuSpotEntity)
-//            holdObject = nil
-//        }
-        
+    private func prepareEntities(_ entites: Entity.ChildCollection) {
+        for entity in (entites[0].children[0].children) {
+            if entity.name == "Wheel" {
+                entity.components[HoldComponent.self] = HoldComponent(entity: entity)
+            }
+        }
     }
     
-    private func overlayCoachingView() {
+    @objc func onTap(_ sender: UITapGestureRecognizer) {
+        
+        let location = sender.location(in: arView)
+        
+        let hands = HandsController.shared
+        
+        if !hands.isHolding {
+            if let entity = arView.entity(at: location) {
+                hands.hold(entity)
+            }
+        } else {
+            hands.release()
+        }
+    }
+    
+    private func setupOverlayCoachingView() {
         let coachingView = ARCoachingOverlayView(frame: arView.frame)
         
         coachingView.session = arView.session
