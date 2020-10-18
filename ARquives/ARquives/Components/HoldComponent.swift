@@ -1,8 +1,8 @@
 //
 //  HoldComponent.swift
-//  RealityKitaum
+//  ARquives
 //
-//  Created by Victor Vasconcelos on 01/10/20.
+//  Created by Victor Vasconcelos on 16/10/20.
 //
 
 import Foundation
@@ -17,8 +17,6 @@ class HoldComponent: Component {
     }
     
     public func hold(onAnchor anchor: Entity) {
-        print("Segura peão!")
-        
         entity.components[PhysicsBodyComponent.self]?.mode = .kinematic
         
         var newTransform = entity.transform
@@ -29,11 +27,9 @@ class HoldComponent: Component {
     }
     
     public func release(onParent parent: Entity?) {
-        print("Soltou do gado!")
         if let newParent = parent {
             entity.setParent(newParent)
             entity.transform.translation = .zero
-            // TODO set position to .zero
         } else {
             entity.components[PhysicsBodyComponent.self]?.mode = .dynamic
         }

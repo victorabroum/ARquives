@@ -18,8 +18,6 @@ extension TireSpotEntity {
             guard let boxA = event.entityA as? TireSpotEntity else {
                 return
             }
-            
-//            boxA.model?.materials = [SimpleMaterial(color: .red, isMetallic: false)]
             print("Encostei \(boxA.name)")
         })
         

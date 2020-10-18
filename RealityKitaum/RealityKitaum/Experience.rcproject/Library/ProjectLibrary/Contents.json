@@ -13,5 +13,20 @@
     "libraryIdentifier" : "3ce807c9260dc806347747fd54f725a7",
     "format" : "model",
     "displayName" : "quadroCapital.usdz"
+  },
+  {
+    "libraryIdentifier" : "39d019f05690596abb94722dd6019dc3",
+    "format" : "model",
+    "displayName" : "aroCapitalWithPneu.usdz"
+  },
+  {
+    "libraryIdentifier" : "785322ed330f645e8ae42edb609db2ab",
+    "format" : "model",
+    "displayName" : "GT-7RacingShineWithTire.usdz"
+  },
+  {
+    "libraryIdentifier" : "603f600c294cdde1d04cc1e665300789",
+    "format" : "model",
+    "displayName" : "capitalWithOutTexture.usdz"
   }
 ]

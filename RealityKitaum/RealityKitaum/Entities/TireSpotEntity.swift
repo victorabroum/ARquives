@@ -18,7 +18,7 @@ class TireSpotEntity: Entity, HasModel, HasCollision {
         super.init()
         
         self.components[CollisionComponent.self] = CollisionComponent(
-            shapes: [.generateSphere(radius: 0.025)],
+            shapes: [.generateSphere(radius: 0.015)],
             mode: .trigger,
             filter: .sensor)
         

@@ -21,7 +21,285 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
+                  "1BB0E2BD-251C-4C87-8FE4-741C4A8D1109" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:785322ed330f645e8ae42edb609db2ab\/GT-7RacingShineWithTire.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "A1F9A74D-8EFA-4DA8-9DA3-9581703062A9"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "2A84397A-8C70-4813-A8D8-B1888FC73124"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "tire"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "rubber",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "dynamic"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.049999993294477463,
+                        0,
+                        0,
+                        0,
+                        0,
+                        2.9802316170446375e-09,
+                        -0.049999985843896866,
+                        0,
+                        0,
+                        0.049999985843896866,
+                        2.9802316170446375e-09,
+                        0,
+                        -0.095843710005283356,
+                        0.03718167170882225,
+                        -0.1038515493273735,
+                        1
+                      ]
+                    }
+                  },
                   "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
+                  "4D4D2632-5BD9-4757-B3F4-495423DDEF2C" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:785322ed330f645e8ae42edb609db2ab\/GT-7RacingShineWithTire.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "E7000115-FF63-484E-A559-E196DD13B3E0"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "AE2E63D7-0D87-476C-8D15-575C4EEC40D8"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "tire"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "rubber",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "dynamic"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.049999993294477463,
+                        0,
+                        0,
+                        0,
+                        0,
+                        2.9802316170446375e-09,
+                        -0.049999985843896866,
+                        0,
+                        0,
+                        0.049999985843896866,
+                        2.9802316170446375e-09,
+                        0,
+                        0.064372457563877106,
+                        0.067160658538341522,
+                        -0.10385338962078094,
+                        1
+                      ]
+                    }
+                  },
                   "6B4CC36E-044A-4DB5-B68F-172575AE1967" : {
                     "overrides" : {
                       "children" : {
@@ -46,7 +324,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:3ce807c9260dc806347747fd54f725a7\/quadroCapital.usdz"
+                                  "value" : "model:603f600c294cdde1d04cc1e665300789\/capitalWithOutTexture.usdz"
                                 }
                               ],
                               [
@@ -66,7 +344,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "57F036DD-2F34-4BA1-813C-0F220A1F623C"
+                                  "value" : "F4016812-B9F6-4C5F-847A-1684A23CC7B9"
                                 }
                               ]
                             ]
@@ -103,6 +381,20 @@
                           {
                             "typeName" : "UUID",
                             "value" : "DC557524-7BDB-407C-AFFE-8C0FCD1A8C6A"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "static"
                           }
                         ]
                       ]
@@ -238,6 +530,120 @@
                   },
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
+                  "C97B1F4B-471F-41A2-9C54-6BBE68BC7928" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "bevelRadius",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.0050000000000000001
+                          }
+                        ],
+                        [
+                          "depth",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.01
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.01
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "box"
+                          }
+                        ],
+                        [
+                          "width",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.028256476063730187
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "500CF73C-AB80-448F-93C0-3DC2AB59D2F4"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "tireSpot"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "static"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.15489421784877777,
+                        0.20894895493984222,
+                        -0.088973492383956909,
+                        1
+                      ]
+                    }
+                  },
                   "C4694F44-8E62-49D3-ABD9-24DD5269D1FE" : {
                     "overrides" : {
                       "children" : {
@@ -262,7 +668,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:985a82df27423b42a0ba83a586a96596\/pneuCapital.usdz"
+                                  "value" : "model:39d019f05690596abb94722dd6019dc3\/aroCapitalWithPneu.usdz"
                                 }
                               ],
                               [
@@ -282,7 +688,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "084927E1-6A55-47A5-AB00-A4DD0CD5CF0A"
+                                  "value" : "2E5C3A34-E296-4027-BD70-EA827AF23FCF"
                                 }
                               ]
                             ]
@@ -371,8 +777,8 @@
                         1.1920929132713809e-08,
                         0,
                         8.9872635555821034e-08,
-                        0.038279581815004349,
-                        0.11275764554738998,
+                        0.025513647124171257,
+                        0.11275692284107208,
                         1
                       ]
                     }
@@ -401,7 +807,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:985a82df27423b42a0ba83a586a96596\/pneuCapital.usdz"
+                                  "value" : "model:785322ed330f645e8ae42edb609db2ab\/GT-7RacingShineWithTire.usdz"
                                 }
                               ],
                               [
@@ -421,7 +827,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "E4781251-A4F7-4BCA-B536-54197B6C8B88"
+                                  "value" : "6E78215C-CA17-4C35-BEFF-C6F6460848C7"
                                 }
                               ]
                             ]
@@ -502,16 +908,130 @@
                         0,
                         0,
                         0,
-                        0.049999993294477463,
+                        2.9802316170446375e-09,
+                        -0.049999985843896866,
                         0,
                         0,
-                        0,
-                        0,
-                        0.049999993294477463,
+                        0.049999985843896866,
+                        2.9802316170446375e-09,
                         0,
                         0.064797192811965942,
-                        0.078839302062988281,
-                        -0.089301235973834991,
+                        0.040780138224363327,
+                        -0.103855200111866,
+                        1
+                      ]
+                    }
+                  },
+                  "DB29BBFD-97CA-442E-AB71-14EF15C46FAB" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "bevelRadius",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.0050000000000000001
+                          }
+                        ],
+                        [
+                          "depth",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.01
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.01
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "box"
+                          }
+                        ],
+                        [
+                          "width",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.028256476063730187
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "5813F4CD-6C36-4B78-AF11-05C7B30E3D8A"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "tireSpot"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "static"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.15654343366622925,
+                        0.20895940065383911,
+                        0.092865869402885437,
                         1
                       ]
                     }
@@ -672,7 +1192,7 @@
                           "width",
                           {
                             "typeName" : "Double",
-                            "value" : 0.063878476709659723
+                            "value" : 0.028256476063730187
                           }
                         ]
                       ],
@@ -725,16 +1245,24 @@
                         0,
                         1,
                         0,
-                        0.16740000247955322,
-                        0.20896917581558228,
-                        0.093230433762073517,
+                        0.16325286030769348,
+                        0.20896340906620026,
+                        0.092867866158485413,
                         1
                       ]
                     }
                   },
-                  "F93F447E-D8A0-4E43-8021-09654F8D9CB9" : {
+                  "F93F447E-D8A0-4E43-8021-09654F8D9CB9" : null,
+                  "FDD805E3-7218-43DE-8FD4-6FC096AC4ACB" : {
                     "overrides" : {
                       "arguments" : [
+                        [
+                          "bevelRadius",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.0050000000000000001
+                          }
+                        ],
                         [
                           "depth",
                           {
@@ -757,6 +1285,18 @@
                           }
                         ],
                         [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              1
+                            ]
+                          }
+                        ],
+                        [
                           "type",
                           {
                             "typeName" : "String",
@@ -767,7 +1307,7 @@
                           "width",
                           {
                             "typeName" : "Double",
-                            "value" : 0.063878476709659723
+                            "value" : 0.028256476063730187
                           }
                         ]
                       ],
@@ -780,7 +1320,7 @@
                           "RuntimeIdentifier",
                           {
                             "typeName" : "UUID",
-                            "value" : "DF53E748-2920-4D9D-8C52-46A4458D3A99"
+                            "value" : "76E69E75-FEC1-4E7E-A896-F34E9E4FEDA4"
                           }
                         ],
                         [
@@ -820,9 +1360,9 @@
                         0,
                         1,
                         0,
-                        0.16736909747123718,
-                        0.2089739590883255,
-                        -0.091869018971920013,
+                        0.16325284540653229,
+                        0.2089618444442749,
+                        -0.081260047852993011,
                         1
                       ]
                     }
@@ -843,21 +1383,21 @@
               "title" : "Garage",
               "viewTransform" : {
                 "cameraTransform" : [
-                  -0.078861050307750702,
-                  3.166496753692627e-08,
-                  -0.99688553810119629,
+                  -0.96143734455108643,
+                  1.3411045074462891e-07,
+                  0.27502384781837463,
                   0,
-                  -0.59875011444091797,
-                  0.79953402280807495,
-                  0.047365829348564148,
+                  0.14250770211219788,
+                  0.85528105497360229,
+                  0.49818247556686401,
                   0,
-                  0.79704385995864868,
-                  0.6006208062171936,
-                  -0.06305297464132309,
+                  -0.23522265255451202,
+                  0.51816421747207642,
+                  -0.82229918241500854,
                   0,
-                  0.75081980228424072,
-                  0.52005034685134888,
-                  -0.24015721678733826,
+                  -0.54143095016479492,
+                  0.59622561931610107,
+                  -0.76796644926071167,
                   1
                 ],
                 "sceneTransform" : [
