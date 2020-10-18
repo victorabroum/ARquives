@@ -16,6 +16,8 @@
 		76980E1F2539D08000550395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76980E1E2539D08000550395 /* Assets.xcassets */; };
 		76980E222539D08000550395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76980E202539D08000550395 /* LaunchScreen.storyboard */; };
 		76980E2D2539D16800550395 /* Garage.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 76980E2C2539D15700550395 /* Garage.rcproject */; };
+		76E3715F253A206B00E01183 /* SpotComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3715E253A206B00E01183 /* SpotComponent.swift */; };
+		76E37162253A232900E01183 /* AttachedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E37161253A232900E01183 /* AttachedComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		76980E212539D08000550395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76980E232539D08000550395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76980E2C2539D15700550395 /* Garage.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Garage.rcproject; sourceTree = "<group>"; };
+		76E3715E253A206B00E01183 /* SpotComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotComponent.swift; sourceTree = "<group>"; };
+		76E37161253A232900E01183 /* AttachedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				764150212539DD83002B131F /* GesturesComponent.swift */,
 				762586482539F14900197B60 /* HoldComponent.swift */,
+				76E3715E253A206B00E01183 /* SpotComponent.swift */,
+				76E37161253A232900E01183 /* AttachedComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -162,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E3715F253A206B00E01183 /* SpotComponent.swift in Sources */,
 				764150222539DD83002B131F /* GesturesComponent.swift in Sources */,
 				76980E182539D07D00550395 /* ViewController.swift in Sources */,
+				76E37162253A232900E01183 /* AttachedComponent.swift in Sources */,
 				7625863F2539EF4800197B60 /* HandsController.swift in Sources */,
 				76980E2D2539D16800550395 /* Garage.rcproject in Sources */,
 				762586492539F14900197B60 /* HoldComponent.swift in Sources */,

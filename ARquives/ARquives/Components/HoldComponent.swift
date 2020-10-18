@@ -16,22 +16,19 @@ class HoldComponent: Component {
         self.entity = entity
     }
     
-    public func hold(onAnchor anchor: Entity) {
+    public func hold(onAnchor camAnchor: Entity) {
         entity.components[PhysicsBodyComponent.self]?.mode = .kinematic
         
         var newTransform = entity.transform
-        entity.setParent(anchor)
+        entity.setParent(camAnchor)
         newTransform.translation = [0,0, -0.30]
-        newTransform.rotation = anchor.orientation
+        newTransform.rotation = camAnchor.orientation
         entity.move(to: newTransform, relativeTo: entity.parent)
+        
+        entity.components[AttachedComponent.self]?.detach()
     }
     
     public func release(onParent parent: Entity?) {
-        if let newParent = parent {
-            entity.setParent(newParent)
-            entity.transform.translation = .zero
-        } else {
-            entity.components[PhysicsBodyComponent.self]?.mode = .dynamic
-        }
+        entity.components[PhysicsBodyComponent.self]?.mode = .dynamic
     }
 }

@@ -8,12 +8,14 @@
 import UIKit
 import RealityKit
 import ARKit
+import Combine
 
 class ViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
     public var garageAnchor: Garage.GarageScene?
     public var cameraAnchor: Entity?
+    public var collisionSubscribers: [Cancellable] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,9 @@ class ViewController: UIViewController {
         
 //        setCommonGestures()
         
+        // Configure Collision Detection
+        detectCollision()
+        
         // Set custom gestures
         HandsController.shared.setHands(cameraAnchor!)
         
@@ -52,25 +57,27 @@ class ViewController: UIViewController {
     }
     
     private func prepareEntities(_ entites: Entity.ChildCollection) {
-        for entity in (entites[0].children[0].children) {
-            if entity.name == "Wheel" {
-                entity.components[HoldComponent.self] = HoldComponent(entity: entity)
+        // Prepare all custom Component
+        HoldComponent.registerComponent()
+        AttachedComponent.registerComponent()
+        SpotComponent.registerComponent()
+        
+        for wheel in garageAnchor?.wheelEntities ?? [] {
+            wheel.components[HoldComponent.self] = HoldComponent(entity: wheel)
+        }
+        
+        for wheelSpot in garageAnchor?.wheelSpotEntities ?? [] {
+            wheelSpot.components[SpotComponent] = SpotComponent(spotEntity: wheelSpot)
+//            wheelSpot.components[ModelComponent.self]?.model = SimpleMaterial(color: .clear, isMetallic: false)
+            if let child = wheelSpot.children[0] as? HasModel {
+                child.model?.materials = [SimpleMaterial(color: .clear, isMetallic: false)]
             }
         }
     }
     
     @objc func onTap(_ sender: UITapGestureRecognizer) {
-        
-        let location = sender.location(in: arView)
-        
-        let hands = HandsController.shared
-        
-        if !hands.isHolding {
-            if let entity = arView.entity(at: location) {
-                hands.hold(entity)
-            }
-        } else {
-            hands.release()
+        if let entity = arView.entity(at: sender.location(in: arView)) {
+            HandsController.shared.tryToGet(entity: entity)
         }
     }
     
@@ -82,5 +89,21 @@ class ViewController: UIViewController {
         coachingView.goal = .horizontalPlane
         
         view.addSubview(coachingView)
+    }
+    
+    public func detectCollision() {
+        collisionSubscribers.append(arView.scene.subscribe(to: CollisionEvents.Began.self, { [weak self] (event) in
+            self?.verifyCollisionBetween(wheel: event.entityA, wheelSpot: event.entityB)
+            self?.verifyCollisionBetween(wheel: event.entityB, wheelSpot: event.entityA)
+        }))
+    }
+    
+    private func verifyCollisionBetween(wheel: Entity, wheelSpot: Entity) {
+        if wheelSpot.name == "Wheel Spot" &&
+            wheel.name == "Wheel" {
+            print("Colidiu certo!")
+            
+            wheelSpot.components[SpotComponent.self]?.tryAttach(entity: wheel)
+        }
     }
 }

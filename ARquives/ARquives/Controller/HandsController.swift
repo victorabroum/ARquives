@@ -7,11 +7,10 @@
 
 import Foundation
 import RealityKit
+import ARKit
 
 class HandsController {
-    private init() {
-        HoldComponent.registerComponent()
-    }
+    private init() { }
     
     public static var shared = HandsController()
     
@@ -40,6 +39,14 @@ class HandsController {
         if isHolding {
             holdingEntity?.components[HoldComponent.self]?.release(onParent: parent)
             holdingEntity = nil
+        }
+    }
+    
+    public func tryToGet(entity: Entity) {
+        if !isHolding {
+            hold(entity)
+        } else {
+            release()
         }
     }
 }
