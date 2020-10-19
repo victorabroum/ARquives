@@ -70,7 +70,8 @@ class ViewController: UIViewController {
             wheelSpot.components[SpotComponent] = SpotComponent(spotEntity: wheelSpot)
 //            wheelSpot.components[ModelComponent.self]?.model = SimpleMaterial(color: .clear, isMetallic: false)
             if let child = wheelSpot.children[0] as? HasModel {
-                child.model?.materials = [SimpleMaterial(color: .clear, isMetallic: false)]
+                child.model?.materials = [SimpleMaterial(color: .init(red: 0, green: 0, blue: 1, alpha: 0), isMetallic: false)]
+//                child.model?.materials = [OcclusionMaterial()]
             }
         }
     }

@@ -8,5 +8,20 @@
     "libraryIdentifier" : "603f600c294cdde1d04cc1e665300789",
     "format" : "model",
     "displayName" : "capitalWithOutTexture.usdz"
+  },
+  {
+    "libraryIdentifier" : "bef1b5922d763e8db36a52f20ce82a17",
+    "format" : "model",
+    "displayName" : "Capital.usdz"
+  },
+  {
+    "libraryIdentifier" : "db217668170082ffb0448b24915521ee",
+    "format" : "model",
+    "displayName" : "elevador.usdz"
+  },
+  {
+    "libraryIdentifier" : "9472ca5f8517499d28eb2d3ab798cc5e",
+    "format" : "model",
+    "displayName" : "aroCapital.usdz"
   }
 ]
