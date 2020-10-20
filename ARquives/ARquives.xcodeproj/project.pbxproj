@@ -18,6 +18,7 @@
 		76980E2D2539D16800550395 /* Garage.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 76980E2C2539D15700550395 /* Garage.rcproject */; };
 		76E3715F253A206B00E01183 /* SpotComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3715E253A206B00E01183 /* SpotComponent.swift */; };
 		76E37162253A232900E01183 /* AttachedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E37161253A232900E01183 /* AttachedComponent.swift */; };
+		76E37166253E1E3900E01183 /* Entity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E37165253E1E3900E01183 /* Entity+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		76980E2C2539D15700550395 /* Garage.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Garage.rcproject; sourceTree = "<group>"; };
 		76E3715E253A206B00E01183 /* SpotComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotComponent.swift; sourceTree = "<group>"; };
 		76E37161253A232900E01183 /* AttachedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedComponent.swift; sourceTree = "<group>"; };
+		76E37165253E1E3900E01183 /* Entity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		76980E142539D07D00550395 /* ARquives */ = {
 			isa = PBXGroup;
 			children = (
+				76E37164253E1E2C00E01183 /* Extensions */,
 				7625863D2539EEF400197B60 /* Controller */,
 				764150202539DD6A002B131F /* Components */,
 				76980E152539D07D00550395 /* AppDelegate.swift */,
@@ -96,6 +99,14 @@
 				76980E2C2539D15700550395 /* Garage.rcproject */,
 			);
 			path = ARquives;
+			sourceTree = "<group>";
+		};
+		76E37164253E1E2C00E01183 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76E37165253E1E3900E01183 /* Entity+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			files = (
 				76E3715F253A206B00E01183 /* SpotComponent.swift in Sources */,
 				764150222539DD83002B131F /* GesturesComponent.swift in Sources */,
+				76E37166253E1E3900E01183 /* Entity+Extensions.swift in Sources */,
 				76980E182539D07D00550395 /* ViewController.swift in Sources */,
 				76E37162253A232900E01183 /* AttachedComponent.swift in Sources */,
 				7625863F2539EF4800197B60 /* HandsController.swift in Sources */,

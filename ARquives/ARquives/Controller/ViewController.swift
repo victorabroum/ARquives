@@ -30,19 +30,20 @@ class ViewController: UIViewController {
         garageAnchor = try! Garage.loadGarageScene()
         arView.scene.anchors.append(garageAnchor!)
         
+        setCommonGestures()
+        
         // Set camera Anchor
         cameraAnchor = AnchorEntity(.camera)
+        cameraAnchor?.setScale(Entity.defaultScale, relativeTo: nil)
         arView.scene.anchors.append(cameraAnchor as! HasAnchoring)
-        
+
         // Add Tap Gesture Recognizer
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onTap(_:)))
         arView.addGestureRecognizer(tapGestureRecognizer)
-        
-//        setCommonGestures()
-        
+
         // Configure Collision Detection
         detectCollision()
-        
+
         // Set custom gestures
         HandsController.shared.setHands(cameraAnchor!)
         
@@ -50,9 +51,9 @@ class ViewController: UIViewController {
     }
     
     private func setCommonGestures() {
-        if let wheel = garageAnchor?.findEntity(named: "Wheel") {
+        for wheel in garageAnchor?.wheelEntities ?? [] {
             GesturesComponent.registerComponent()
-            wheel.components[GesturesComponent.self] = GesturesComponent(arView: arView, gestures: [.rotation, .scale, .translation], for: wheel)
+            wheel.components[GesturesComponent.self] = GesturesComponent(arView: arView, gestures: [.all], for: wheel)
         }
     }
     
@@ -62,16 +63,18 @@ class ViewController: UIViewController {
         AttachedComponent.registerComponent()
         SpotComponent.registerComponent()
         
+        for entity in entites {
+            entity.scale = Entity.defaultScale
+        }
+        
         for wheel in garageAnchor?.wheelEntities ?? [] {
             wheel.components[HoldComponent.self] = HoldComponent(entity: wheel)
         }
         
         for wheelSpot in garageAnchor?.wheelSpotEntities ?? [] {
             wheelSpot.components[SpotComponent] = SpotComponent(spotEntity: wheelSpot)
-//            wheelSpot.components[ModelComponent.self]?.model = SimpleMaterial(color: .clear, isMetallic: false)
             if let child = wheelSpot.children[0] as? HasModel {
                 child.model?.materials = [SimpleMaterial(color: .init(red: 0, green: 0, blue: 1, alpha: 0), isMetallic: false)]
-//                child.model?.materials = [OcclusionMaterial()]
             }
         }
     }

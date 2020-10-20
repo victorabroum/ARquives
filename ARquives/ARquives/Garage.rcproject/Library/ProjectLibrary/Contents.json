@@ -23,5 +23,15 @@
     "libraryIdentifier" : "9472ca5f8517499d28eb2d3ab798cc5e",
     "format" : "model",
     "displayName" : "aroCapital.usdz"
+  },
+  {
+    "libraryIdentifier" : "542684c9ce86df6b9911c16efed8746a",
+    "format" : "model",
+    "displayName" : "chaoOficina.usdz"
+  },
+  {
+    "libraryIdentifier" : "7cb2c7dc2a98391428218dff50ca0314",
+    "format" : "model",
+    "displayName" : "chaoOficina2.usdz"
   }
 ]

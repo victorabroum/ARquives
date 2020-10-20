@@ -15,6 +15,8 @@ class GesturesComponent: Component {
         // Generate Collision Shaped for All childrens
         entity.generateCollisionShapes(recursive: true)
         
+        entity.components[PhysicsBodyComponent.self]?.mode = .kinematic
+        
         arView.installGestures(gestures, for: entity as! HasCollision)
     }
     
