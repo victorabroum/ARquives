@@ -210,119 +210,8 @@
                       ]
                     }
                   },
-                  "08ECFAD7-8CD1-470A-B640-B900F0F939F6" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:9472ca5f8517499d28eb2d3ab798cc5e\/aroCapital.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : true
-                                }
-                              ]
-                            ],
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "3FC49046-69B7-49E4-B5ED-1C8EF38656EC"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "CBE0498D-C364-4239-A031-1ED532561FFB"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "Wheel"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.05000000074505806,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.05000000074505806,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.05000000074505806,
-                        0,
-                        4.0978196835794733e-08,
-                        0.049685303121805191,
-                        0.21017464995384216,
-                        1
-                      ]
-                    }
-                  },
+                  "08ECFAD7-8CD1-470A-B640-B900F0F939F6" : null,
+                  "8F4AFC54-57A2-49C2-B13A-D2350A2A71EB" : null,
                   "9B6AB467-F4F0-468D-B7C0-29C97832DC2A" : null,
                   "9F76A3CE-9704-4A45-9DBD-2723586C8A18" : {
                     "overrides" : {
@@ -592,6 +481,7 @@
                   "47E28E18-F5A3-43C9-9175-A697F79BE924" : null,
                   "52AE1E3D-F55F-4A62-B8AE-BF6090929C28" : null,
                   "53F1786E-3E18-4053-B76A-B923A400B335" : null,
+                  "94C15BC4-46CB-4F56-B845-8360C7E5F8FA" : null,
                   "00485BEC-9180-4E3C-8585-DCE80C25E2E6" : {
                     "overrides" : {
                       "children" : {
@@ -1277,7 +1167,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "9F8E9293-B745-462F-8B26-36FE103A64E7"
+                                  "value" : "106BC5AB-F6C6-4696-ABFF-57623431322D"
                                 }
                               ]
                             ]
@@ -1468,6 +1358,7 @@
                   },
                   "E0ECFC23-6E1B-4705-9AF0-E7D4C3D0C7FC" : null,
                   "ED993329-F227-498C-97C4-E1CD55C53507" : null,
+                  "F10B1B73-321C-4863-8B98-5E49EDA3EC68" : null,
                   "F22DBF04-C7D7-424B-91A4-7991E0079885" : null,
                   "F40B8A9E-2187-4943-95D9-C75A7BAC3175" : null,
                   "F3612F9E-758A-41F9-B0A2-E3447AA60C66" : null,
@@ -1490,21 +1381,21 @@
               "title" : "GarageScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.67569327354431152,
-                  5.029141902923584e-08,
-                  -0.7371828556060791,
+                  0.66243815422058105,
+                  5.0291422581949519e-08,
+                  -0.74911648035049438,
                   0,
-                  -0.18862120807170868,
-                  0.96671187877655029,
-                  -0.17288790643215179,
+                  -0.19792225956916809,
+                  0.96446579694747925,
+                  -0.17502108216285706,
                   0,
-                  0.71264344453811646,
-                  0.25586742162704468,
-                  0.65320068597793579,
+                  0.72249734401702881,
+                  0.26420742273330688,
+                  0.63889902830123901,
                   0,
-                  0.76001566648483276,
-                  0.31844606995582581,
-                  0.57215273380279541,
+                  0.79403090476989746,
+                  0.34387516975402832,
+                  0.52921497821807861,
                   1
                 ],
                 "sceneTransform" : [

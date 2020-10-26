@@ -24,13 +24,10 @@ class ViewController: UIViewController {
     }
     
     private func setupScene() {
-        
-//        arView.debugOptions = [.showPhysics]
-        
         garageAnchor = try! Garage.loadGarageScene()
         arView.scene.anchors.append(garageAnchor!)
         
-        setCommonGestures()
+//        setCommonGestures()
         
         // Set camera Anchor
         cameraAnchor = AnchorEntity(.camera)
@@ -53,12 +50,12 @@ class ViewController: UIViewController {
     private func setCommonGestures() {
         for wheel in garageAnchor?.wheelEntities ?? [] {
             GesturesComponent.registerComponent()
-            wheel.components[GesturesComponent.self] = GesturesComponent(arView: arView, gestures: [.all], for: wheel)
+            wheel.components[GesturesComponent.self] = GesturesComponent(arView: arView, gestures: [.rotation, .translation, .scale], for: wheel)
         }
     }
     
     private func prepareEntities(_ entites: Entity.ChildCollection) {
-        // Prepare all custom Component
+        // Prepare all custom Component 
         HoldComponent.registerComponent()
         AttachedComponent.registerComponent()
         SpotComponent.registerComponent()
@@ -85,16 +82,6 @@ class ViewController: UIViewController {
         }
     }
     
-    private func setupOverlayCoachingView() {
-        let coachingView = ARCoachingOverlayView(frame: arView.frame)
-        
-        coachingView.session = arView.session
-        coachingView.activatesAutomatically = true
-        coachingView.goal = .horizontalPlane
-        
-        view.addSubview(coachingView)
-    }
-    
     public func detectCollision() {
         collisionSubscribers.append(arView.scene.subscribe(to: CollisionEvents.Began.self, { [weak self] (event) in
             self?.verifyCollisionBetween(wheel: event.entityA, wheelSpot: event.entityB)
@@ -105,8 +92,6 @@ class ViewController: UIViewController {
     private func verifyCollisionBetween(wheel: Entity, wheelSpot: Entity) {
         if wheelSpot.name == "Wheel Spot" &&
             wheel.name == "Wheel" {
-            print("Colidiu certo!")
-            
             wheelSpot.components[SpotComponent.self]?.tryAttach(entity: wheel)
         }
     }

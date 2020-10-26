@@ -10,6 +10,7 @@
 		7625863F2539EF4800197B60 /* HandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625863E2539EF4800197B60 /* HandsController.swift */; };
 		762586492539F14900197B60 /* HoldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762586482539F14900197B60 /* HoldComponent.swift */; };
 		764150222539DD83002B131F /* GesturesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764150212539DD83002B131F /* GesturesComponent.swift */; };
+		768ECD6A254323BA002C8B3E /* ViewController+PreSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768ECD69254323BA002C8B3E /* ViewController+PreSetup.swift */; };
 		76980E162539D07D00550395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76980E152539D07D00550395 /* AppDelegate.swift */; };
 		76980E182539D07D00550395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76980E172539D07D00550395 /* ViewController.swift */; };
 		76980E1D2539D07D00550395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76980E1B2539D07D00550395 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		7625863E2539EF4800197B60 /* HandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsController.swift; sourceTree = "<group>"; };
 		762586482539F14900197B60 /* HoldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldComponent.swift; sourceTree = "<group>"; };
 		764150212539DD83002B131F /* GesturesComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesComponent.swift; sourceTree = "<group>"; };
+		768ECD69254323BA002C8B3E /* ViewController+PreSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PreSetup.swift"; sourceTree = "<group>"; };
 		76980E122539D07D00550395 /* ARquives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARquives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76980E152539D07D00550395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76980E172539D07D00550395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				76E37165253E1E3900E01183 /* Entity+Extensions.swift */,
+				768ECD69254323BA002C8B3E /* ViewController+PreSetup.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				76980E182539D07D00550395 /* ViewController.swift in Sources */,
 				76E37162253A232900E01183 /* AttachedComponent.swift in Sources */,
 				7625863F2539EF4800197B60 /* HandsController.swift in Sources */,
+				768ECD6A254323BA002C8B3E /* ViewController+PreSetup.swift in Sources */,
 				76980E2D2539D16800550395 /* Garage.rcproject in Sources */,
 				762586492539F14900197B60 /* HoldComponent.swift in Sources */,
 				76980E162539D07D00550395 /* AppDelegate.swift in Sources */,
